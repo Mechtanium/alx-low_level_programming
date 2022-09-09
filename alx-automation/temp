@@ -1,0 +1,41 @@
+DIR_PATH=./0x00-hello_world
+! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
+
+
+README_PATH=$DIR_PATH/README.md
+if ! [[ -f "$README_PATH" ]] 
+then
+	echo -e 'You do not have a README.md yet. Create it now' > $README_PATH
+	vi $README_PATH
+fi
+
+
+echo -n "What is filename: "
+read filename
+FILE_PATH=$DIR_PATH/$filename
+! [[ -f "$FILE_PATH" ]] && echo -e '#!/bin/bash\n' > $FILE_PATH
+echo -e "\n"
+ls -l $DIR_PATH
+echo -e "\n"
+echo -e "    /\\    "
+echo -e "   /  \\   "
+echo -e "  /_  _\\  "
+echo -e "    ||     "
+echo -e "    --     "
+echo -e "Folder content\n"
+
+
+vi $FILE_PATH
+chmod u+x $FILE_PATH
+echo "Verify the result =>"
+echo "Plato: Man know thyself" | $FILE_PATH
+echo "Press any key to continue: "
+read
+
+
+git add .
+git status
+echo -n "Enter commit message: "
+read message
+git commit -m "$message"
+git push
