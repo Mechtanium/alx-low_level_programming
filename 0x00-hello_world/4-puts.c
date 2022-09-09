@@ -9,11 +9,8 @@
 
 int main(void)
 {
-	/**
-	 * @c: return value from puts function. Boolean for success or failure
-	 */
-	int c;
-	c = puts("\"Programming is like building a multilingual puzzle");
+	puts("\"Programming is like building a multilingual puzzle");
+	
 	return (0);
 }
 
