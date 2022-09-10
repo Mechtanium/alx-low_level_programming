@@ -1,4 +1,4 @@
-DIR_PATH=./0x00-hello_world
+DIR_PATH=./0x01-variables_if_else_while
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 
