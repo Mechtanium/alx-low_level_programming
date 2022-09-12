@@ -1,4 +1,5 @@
-DIR_PATH=./0x01-variables_if_else_while
+#!/bin/bash
+DIR_PATH=./0x00-hello_world
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 
@@ -13,7 +14,31 @@ fi
 echo -n "What is filename: "
 read filename
 FILE_PATH=$DIR_PATH/$filename
-! [[ -f "$FILE_PATH" ]] && echo -e '#!/bin/bash\n' > $FILE_PATH
+if ! [ -f "$FILE_PATH" ] 
+then 
+    if [ $1 == bash ] || [ $1 == Bash ] || [ $1 == BASH ]
+    then 
+        echo -e '#!/bin/bash\n' > $FILE_PATH
+    elif [ $1 == c ] || [ $1 == C ]
+    then
+        echo -e "#include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: Add question here
+ * Return: 0 (success) and 1 (failure) to execute
+ */
+int main(void)
+{
+    
+	return (0);
+}
+" > $FILE_PATH
+    fi
+fi
 echo -e "\n"
 ls -l $DIR_PATH
 echo -e "\n"
