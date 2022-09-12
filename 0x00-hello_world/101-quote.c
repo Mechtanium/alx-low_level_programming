@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 #include <string.h>
 
@@ -17,8 +16,9 @@
 
 int main(void)
 {
-	fprintf(stderr, RED "ERROR", NC 
-		"and that piece of art is useful\" - Dora Korpar, 2015-10-19");
+	char[] msg="and that piece of art is useful\" - \
+		Dora Korpar, 2015-10-19"
+	fwrite(*msg, sizeof(msg), 1, stderr);
 	return (0);
 }
 
