@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR_PATH=./0x00-hello_world
+DIR_PATH=./0x02-functions_nested_loops
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 
