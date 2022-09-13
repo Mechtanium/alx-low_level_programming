@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include <_putchar.c>
 
 /**
  * simple_write: writes to standard output
@@ -29,7 +29,12 @@ void simple_write(char text[], int len)
 void print_alphabet(void)
 {
 	char str[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
 
-	simple_write(str, strlen(str));
+	for(i = 0; i < 26; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar("\n");
 }
 
