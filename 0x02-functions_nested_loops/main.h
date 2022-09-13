@@ -8,8 +8,13 @@
  * Result: 0 (success) and 1 (failure)
  */
 
-void simple_write(char []text)
+void simple_write(char text[], int len)
 {
-	fwrite(text, sizeof(text), 1, stdout)
+	int i;
+	
+	for(i = 0; i < len; i++)
+	{
+		fwrite(&text[i], sizeof(text[i]), 1, stdout);
+	}
 }
 

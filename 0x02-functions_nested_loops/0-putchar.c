@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 
 /**
@@ -11,7 +12,7 @@
  
 int main(void)
 {
-	simple_write("_putchar")
+	simple_write("_putchar", strlen("_putchar"));
 	return (0);
 }
 
