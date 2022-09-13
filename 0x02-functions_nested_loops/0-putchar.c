@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
 #include "main.h"
 
 /**
@@ -12,7 +11,7 @@
  
 int main(void)
 {
-	printf("_putchar")
+	simple_write("_putchar")
 	return (0);
 }
 
