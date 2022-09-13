@@ -7,12 +7,13 @@
  * main - Main entry point
  *
  * Description: Print _putchar to stdout
- * Result: 0 (success) 1 (failure)
+ * Return: 0 (success) 1 (failure)
  */
 
 int main(void)
 {
 	char str[] = "_putchar\n";
+
 	simple_write(str, strlen(str));
 	return (0);
 }
