@@ -12,7 +12,7 @@
 
 int main(void)
 {
-	char str[] = "_putchar\n"
+	char str[] = "_putchar\n";
 	simple_write(str, strlen(str));
 	return (0);
 }
