@@ -2,13 +2,13 @@
 #include "main.h"
 #include <stdio.h>
 #include "_putchar.c"
+
 /**
  * print_alphabet - writes to standard output
  *
  * Description: Doesn't use the standard library. Uses fwrite.
  * Result: 0 (success) and 1 (failure)
  */
-
 void print_alphabet(void);
 
 /**
@@ -23,19 +23,3 @@ int main(void)
 	return (0);
 }
 
-/**
- * print_alphabet - writes to standard output
- *
- * Description: Doesn't use the standard library. Uses fwrite.
- * Result: 0 (success) and 1 (failure)
- */
-void print_alphabet()
-{
-        char str[] = "abcdefghijklmnopqrstuvwxyz\n";
-        int i;
-
-        for(i = 0; i <= 26; i++)
-        {
-                _putchar(str[i]);
-        }
-}
