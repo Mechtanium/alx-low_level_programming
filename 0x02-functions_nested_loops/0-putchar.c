@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <time.h>
+#include "main.h"
 
 /**
  * main: Main entry point
@@ -10,9 +10,9 @@
  * Result: 0 (success) 1 (failure)
  */
  
- int main(void)
- {
+int main(void)
+{
 	printf("_putchar")
-    return (0);
+	return (0);
 }
 
