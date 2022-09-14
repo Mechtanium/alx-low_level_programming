@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <unistd.h>
 
+void print_alphabet(void);
+
 /**
  * simple_write: writes to standard output
  * 

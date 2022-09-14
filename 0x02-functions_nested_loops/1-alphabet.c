@@ -4,14 +4,6 @@
 #include "_putchar.c"
 
 /**
- * print_alphabet - writes to standard output
- *
- * Description: Doesn't use the standard library. Uses fwrite.
- * Result: 0 (success) and 1 (failure)
- */
-void print_alphabet(void);
-
-/**
  * main - Entry point
  *
  * Description: Add question here
