@@ -1,17 +1,21 @@
 #include <stdlib.h>
-#include "main.h"
 #include <stdio.h>
-#include "_putchar.c"
+#include <unistd.h>
 
 /**
- * main - Entry point
+ * print_alphabet - writes to standard output
  *
- * Description: Add question here
- * Return: 0 (success) and 1 (failure) to execute
+ * Description: Doesn't use the standard library. Uses fwrite.
+ * Result: 0 (success) and 1 (failure)
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        char str[] = "abcdefghijklmnopqrstuvwxyz\n";
+        int i;
+
+        for(i = 0; i <= 26; i++)
+        {
+                _putchar(str[i]);
+        }
 }
 
