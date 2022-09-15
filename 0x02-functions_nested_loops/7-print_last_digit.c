@@ -12,18 +12,19 @@
 int print_last_digit(int d)
 {
 	long int n = d;
+
 	if (n > 0)
 	{
 		int r = n % 10;
 
-		_putchar(r+48);
+		_putchar(r + 48);
 		return (r);
 	}
 	else
 	{
 		int r = (n * (-1)) % 10;
 
-		_putchar(r+48);
+		_putchar(r + 48);
 		return (r);
 	}
 }
