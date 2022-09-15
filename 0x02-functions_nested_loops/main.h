@@ -9,5 +9,6 @@ int print_sign(int n);
 int _abs(int);
 int print_last_digit(int);
 int add(int, int);
+void times_table(void);
 void simple_write(char text[], int len);
 #endif
