@@ -4,13 +4,14 @@
 
 /**
  * print_last_digit - Returns the last digit of any number
- * @n: the integer to be analysed
+ * @d: the integer to be analysed
  *
  * Description: Uses the modulus operator to divide by 10 in a loop.
- * Return: Remainder of n % 10
+ * Return: Remainder of d % 10
  */
-int print_last_digit(int n)
+int print_last_digit(int d)
 {
+	long int n = d
 	if (n > 0)
 	{
 		int r = n % 10;
