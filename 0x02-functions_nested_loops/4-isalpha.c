@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * _islower - Checks for alphabets
+ * _isalpha - Checks for alphabets
  * @c: The character to be judged
  *
  * Description: Uses if statment and logical operators
