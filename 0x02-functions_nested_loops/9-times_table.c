@@ -19,7 +19,7 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			k = i * j;
-			int l = k / 10;
+			int l = (int) k / 10;
 			int m = (k % 10) + 48;
 
 			if (l > 0)
