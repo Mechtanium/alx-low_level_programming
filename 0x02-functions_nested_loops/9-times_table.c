@@ -19,12 +19,12 @@ void times_table(void)
 		for (j = 0; j < 10; j++)
 		{
 			k = i * j;
-			int l = (int) k / 10;
+			double l = k / 10;
 			int m = (k % 10) + 48;
 
 			if (l > 0)
 			{
-				_putchar(l + 48);
+				_putchar(((int) l) + 48);
 			}
 
 			_putchar(m);
