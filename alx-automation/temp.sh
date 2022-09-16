@@ -1,5 +1,5 @@
 #!/bin/bash
-DIR_PATH=./0x03-debugging
+DIR_PATH=./0x04-more_functions_nested_loops
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 
