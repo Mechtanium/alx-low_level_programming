@@ -20,11 +20,15 @@ void more_numbers(void)
 			if (j > 9)
 			{
 				int k = (int) j / 10;
-				_putchar(k);
+
+				_putchar(k + 48);
 			}
-			_putchar(j % 10);
+			_putchar((j % 10) + 48);
 		}
-		_putchar('\n');
+		if (i != 10)
+		{
+			_putchar('\n');
+		}
 	}
 }
 
