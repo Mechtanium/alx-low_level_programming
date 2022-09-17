@@ -3,12 +3,12 @@
 #include "main.h"
 
 /**
- * print_numbers - print 0 - 9
+ * print_most_numbers - print 0 - 9
  *
  * Description: print numbers from zero through nine and end with a new line.
  * Return: 0 (success) and 1 (failure) to execute
  */
-void print_numbers(void)
+void print_most_numbers(void)
 {
 	int i;
 
@@ -19,6 +19,5 @@ void print_numbers(void)
 			_putchar(i + 48);
 		}
 	}
-	_putchar('\n');
 }
 
