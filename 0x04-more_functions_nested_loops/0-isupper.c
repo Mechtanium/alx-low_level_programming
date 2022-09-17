@@ -4,6 +4,7 @@
 
 /**
  * _isupper - Entry point
+ * @c: (int) Character to be checked. char is a kind of int.
  *
  * Description: Add question here
  * Return: 0 (success) and 1 (failure) to execute
@@ -19,3 +20,4 @@ int _isupper(int c)
 		return (0);
 	}
 }
+
