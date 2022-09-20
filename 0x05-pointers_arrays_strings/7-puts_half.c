@@ -28,7 +28,7 @@ void puts_half(char *str)
 		_putchar('\n');
 	}
 
-	l = l != 0 ? l-- : l
+	l != 0 ? l-- : l;
 
 	/* l returns the number of elements in the array not the last index */
 
