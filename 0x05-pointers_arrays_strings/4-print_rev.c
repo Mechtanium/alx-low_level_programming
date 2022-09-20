@@ -12,7 +12,7 @@
 void print_rev(char *s)
 {
 	int i = 0;
-	int l;
+	int l = sizeof(s)/sizeof(char);
 
 	while (*(s + i) != '\0')
 	{
@@ -26,3 +26,4 @@ void print_rev(char *s)
 
 	_putchar('\n');
 }
+
