@@ -3,6 +3,27 @@
 #include "main.h"
 
 /**
+ * _strlen - Measure string length
+ * @s: String to be measured
+ *
+ * Description: Write a function that returns the length of a string.
+ * Return: 0 (success) and 1 (failure) to execute
+ */
+int _strlen(char *s)
+{
+	int l = 0;
+	char c = *s;
+
+	while (c != '\0')
+	{
+		c = *(s + l);
+		l++;
+	}
+
+	return (l == 0 ? l : --l);
+}
+
+/**
  * rev_string - Reverese characters in a string.
  * @s: Pointer to first character in string.
  *
@@ -22,7 +43,7 @@ void rev_string(char *s)
 		*(s + (r - l)) = c;
 	}
 
-	printf("%s\n", s);
+	printf("Mucho gusto: %d, %d\n", r, l);
 
 	/* char str[r];
 	int ps;*/
