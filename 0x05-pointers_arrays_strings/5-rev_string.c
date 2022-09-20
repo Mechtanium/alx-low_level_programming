@@ -11,28 +11,33 @@
  */
 void rev_string(char *s)
 {
-	int l = 0;
-	char c = *s;
-	int r;
+	int l;
+	int r = _strlen(s);
+	char c;
 
-	while (c != '\0')
+	for (l = 0; l <= (r / 2); l++)
 	{
 		c = *(s + l);
-		l++;
+		*(s + l) = *(s + (r - l));
+		*(s + (r - l)) = c;
 	}
 
-	r = (l == 0) ? l : --l;
+	printf("%s\n", s);
 
-	char str[r];
+	/* char str[r];
+	int ps;*/
 
-	for (l = r; l <= 0; l--)
+	/*for (l = r; l <= 0; l--)
 	{
-		str[r-l] = *(s+r-l);
+		ps = r - l;
+		str[ps] = *(s + ps);
 	}
+
+	printf("%s\n", str);
 
 	for (l = 0; l <= r; l++)
 	{
 		*(s + l) = str[l];
-	}
+	}*/
 }
 
