@@ -11,15 +11,19 @@
  */
 void print_rev(char *s)
 {
-	int i = 0;
-	int l = sizeof(s)/sizeof(char);
+	int l = 0;
+	char c = *s;
+	int r;
 
-	while (*(s + i) != '\0')
+	while (c != '\0')
 	{
-		i++;
+		c = *(s + l);
+		l++;
 	}
 
-	for (l = i; l <= 0; l--)
+	r = (l == 0) ? l : --l;
+
+	for (l = r; l <= 0; l--)
 	{
 		_putchar(*(s + l));
 	}
