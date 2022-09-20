@@ -17,7 +17,7 @@ void puts_half(char *str)
 	int i = 0;
 	int n;
 
-	while (c != 0 || c != '\0')
+	while (c != 0)
 	{
 		c = *(str + l);
 		l++;
@@ -28,10 +28,12 @@ void puts_half(char *str)
 		_putchar('\n');
 	}
 
+	l = l != 0 ? l-- : l
+
 	/* l returns the number of elements in the array not the last index */
 
 	_putchar(l + 48);
-	n = (l % 2 == 0) ? l / 2 : (l - 1) / 2;
+	n = (l % 2 == 0) ? l / 2 : (l + 1) / 2;
 	_putchar(n + 48);
 
 	for (i = n + 1; i < l; i++)
