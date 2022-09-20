@@ -22,6 +22,10 @@ void puts_half(char *str)
 		c = *(str + l);
 		l++;
 		_putchar(++i + 48);
+		_putchar(':');
+		_putchar(' ');
+		_putchar(c);
+		_putchar('\n');
 	}
 
 	/* l returns the number of elements in the array not the last index */
