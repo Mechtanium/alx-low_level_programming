@@ -4,6 +4,7 @@
 
 /**
  * _puts - Prints string
+ * @str: The string to be printed
  *
  * Description: I do not fear computers. I fear the lack of them.
  * Return: 0 (success) and 1 (failure) to execute
