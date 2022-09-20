@@ -80,8 +80,6 @@ read
 #Versioning and submission
 git add .
 git status
-echo -n "Enter commit message: "
-read message
-git commit -m "$message"
+git commit -m "$(grep -A1 -P $filename $README_PATH | tail -n 1)"
 git push
 
