@@ -14,20 +14,21 @@ void puts_half(char *str)
 {
 	int l = 0;
 	char c = *str;
-	int i;
+	int i = 0;
 	int n;
 
 	while (c != 0)
 	{
 		c = *(str + l);
 		l++;
+		_putchar(++i + 48);
 	}
 
 	/* l returns the number of elements in the array not the last index */
 
 	_putchar(l + 48);
 	n = (l % 2 == 0) ? l / 2 : (l - 1) / 2;
-	_putchar(l + 48);
+	_putchar(n + 48);
 
 	for (i = n + 1; i < l; i++)
 	{
