@@ -83,6 +83,6 @@ then
 	git add .
 	git status
 	git commit -m "$(grep -A1 -P $filename $README_PATH | tail -n 1)"
-	git pus
+	git push
 fi
 

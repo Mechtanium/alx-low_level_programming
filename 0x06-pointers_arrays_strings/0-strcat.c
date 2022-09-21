@@ -48,24 +48,22 @@ int strln(char *dest, char *src)
  */
 char *_strcat(char *dest, char *src)
 {
-	return (strcat(dest, src));
-	/* int l = strln(dest, src);
-	char fullstr[l];
-	int i;
+	int i = 0;
 	int c;
 
-	while (*(dest + i) != 0)
+	while (*(dest + i))
 	{
 		i++;
 	}
 
 	c = i;
 
-	while (*(src + (i - c)) != 0)
+	while (*(src + (i - c)))
 	{
 		*(dest + i) = *(src + (i - c));
 		i++;
 	}
 
-	return (&fullstr); */
+	*(dest + i) = '\0';
+	return (dest);
 }
