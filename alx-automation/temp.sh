@@ -1,6 +1,6 @@
 #!/bin/bash
 #Create project file
-DIR_PATH=./0x05-pointers_arrays_strings
+DIR_PATH=./0x06-pointers_arrays_strings
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
@@ -77,9 +77,12 @@ fi
 echo "Verify result and hit enter key to continue or ctrl+C to terminate: "
 read
 
-#Versioning and submission
-git add .
-git status
-git commit -m "$(grep -A1 -P $filename $README_PATH | tail -n 1)"
-git push
+if ! [ $1 == h ] && ! [ $1 == H ]
+then
+	#Versioning and submission
+	git add .
+	git status
+	git commit -m "$(grep -A1 -P $filename $README_PATH | tail -n 1)"
+	git pus
+fi
 
