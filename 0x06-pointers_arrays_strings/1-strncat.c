@@ -6,6 +6,7 @@
  * _strncat - Entry point
  * @dest: Pointer var 1
  * @src: Pointer var 2
+ * @n: Action counter
  *
  * Description: Add question here
  * Return: 0 (success) and 1 (failure) to execute
