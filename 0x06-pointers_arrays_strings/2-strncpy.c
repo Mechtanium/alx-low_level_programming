@@ -15,9 +15,9 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
-	while (*(dest + i) || i < n)
+	while (*(src + i) || i < n)
 	{
-		if (*(dest + i) && i < n)
+		if (*(src + i) && i < n)
 			*(dest + i) = *(src + i);
 		else if (i < n)
 			dest[i] = '\0';
