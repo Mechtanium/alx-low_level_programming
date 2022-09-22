@@ -12,7 +12,8 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, r = 0/*, s */;
+	int i = 0, r = 0;
+	/*, s */
 
 	while (*(s1 + i) && *(s2 + i))
 	{
@@ -20,19 +21,19 @@ int _strcmp(char *s1, char *s2)
 		i++;
 	}
 
-	/* s = i;
+	/* s = i; */
 
-	while (*(s1 + i))
-	{
-		r += *(s1 + i);
-		i++;
-	}
+	/* while (*(s1 + i)) */
+	/* { */
+	/* 	r += *(s1 + i); */
+	/* 	i++; */
+	/* } */
 
-	while (*(s2 + s))
-	{
-		r -= *(s2 + s);
-		s++;
-	} */
+	/* while (*(s2 + s)) */
+	/* { */
+	/* 	r -= *(s2 + s); */
+	/* 	s++; */
+	/* } */
 
 	return (r);
 }
