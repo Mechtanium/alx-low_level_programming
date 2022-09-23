@@ -74,11 +74,11 @@ then
         fi
 fi
 
-echo "Verify result and hit enter key to continue or ctrl+C to terminate: "
-read
-
 if ! [ $1 == h ] && ! [ $1 == H ]
 then
+	echo "Verify result and hit enter key to continue or ctrl+C to terminate: "
+	read
+
 	#Versioning and submission
 	git add .
 	git status
