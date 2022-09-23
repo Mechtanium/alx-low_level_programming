@@ -12,28 +12,42 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0, r = 0;
-	/*, s */
+	int i = 0, r = 0, c = 0, b = 0, l;
 
-	while (*(s1 + i) && *(s2 + i))
+	while (s1[i])
 	{
-		r += (*(s1 + i) - *(s2 + i));
 		i++;
 	}
 
-	/* s = i; */
+	while (s2[r])
+	{
+		r++;
+	}
 
-	/* while (*(s1 + i)) */
-	/* { */
-	/*	r += *(s1 + i); */
-	/*	i++; */
-	/* } */
+	if (i <= r)
+	{
+		l = i;
+	}
+	else
+	{
+		l = r;
+	}
 
-	/* while (*(s2 + s)) */
-	/* { */
-	/*	r -= *(s2 + s); */
-	/*	s++; */
-	/* } */
+	while (b <= l)
+	{
+		if (s1[b] == s2[b])
+		{
+			b++;
+			continue;
+		}
+		else
+		{
+			c = s1[b] - s2[b];
+			break;
+		}
 
-	return (r);
+		b++;
+	}
+	return (c);
 }
+
