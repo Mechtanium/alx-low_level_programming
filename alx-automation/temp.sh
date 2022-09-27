@@ -1,6 +1,6 @@
 #!/bin/bash
 #Create project file
-DIR_PATH=./0x06-pointers_arrays_strings
+DIR_PATH=./0x07-pointers_arrays_strings
 ! [[ -d "$DIR_PATH" ]] && mkdir $DIR_PATH
 
 #Create folder readme file
