@@ -17,20 +17,18 @@ unsigned int _strspn(char *s, char *accept)
 	while (s[i])
 	{
 		k = n;
+		j = 0;
 		while (accept[j])
 		{
 			if (accept[j] == s[i])
 			{
 				n++;
-				printf("%c - %c\n", s[i], accept[j]);
 			}
 			j++;
 		}
 		i++;
 		if (k == n)
 		{
-			printf("s: %c - %c\n", s[i], accept[j]);
-			printf("%d - K: %d\n", n, k);
 			return (n);
 		}
 	}
