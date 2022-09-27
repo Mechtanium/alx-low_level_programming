@@ -9,7 +9,7 @@
  * @n: Number of replacements
  *
  * Description: Add question here
- * Return: 0 (success) and 1 (failure) to execute
+ * Return: String pointer s
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -20,6 +20,6 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return (0);
+	return (s);
 }
 
