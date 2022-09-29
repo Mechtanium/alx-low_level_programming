@@ -3,12 +3,13 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * main - Short statement of function purpose
+ * @argc: Info on argc.
  *
- * Description: Add question here
- * Return: 0 (success) and 1 (failure) to execute
+ * Description: Describe in detail how the function works here
+ * Return: 0 (success) and 1 (failure).
  */
-int main(void)
+int main(char argc)
 {
 	return (0);
 }
