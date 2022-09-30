@@ -5,6 +5,7 @@
 /**
  * _sqrt_iterator - Calculates square root
  * @n: int number to square root
+ * @t: int number to test for square
  *
  * Description: Calculates the natural square root of a number.
  * Return: The natural square root of a number.
