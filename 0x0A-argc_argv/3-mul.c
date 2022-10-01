@@ -10,13 +10,13 @@
  * Description: Describe in detail how the function works here
  * Return: 0 (success) and 1 (failure).
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
 		printf("%s\n", "Error");
 		return (EXIT_FAILURE);
 	}
-	printf("%d\n", (atoi((*argv + 1)) * atoi((*argv + 2))));
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return (EXIT_SUCCESS);
 }
