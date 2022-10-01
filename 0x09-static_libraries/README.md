@@ -1,17 +1,5 @@
-# 0-whatsmyname.c
-Write a program that prints its name, followed by a new line.
+# libmy.a
+Create the static library libmy.a containing all the functions listed below:
 
-# 1-args.c
-Write a program that prints the number of arguments passed into it.
-
-# 2-args.c
-Write a program that prints all arguments it receives.
-
-# 3-mul.c
-Write a program that multiplies two numbers.
-
-# 4-add.c
-Write a program that adds positive numbers.
-
-# 100-change.c
-Write a program that prints the minimum number of coins to make change for an amount of money.
+# create_static_lib.sh
+Create a script called create_static_lib.sh that creates a static library called liball.a from all the .c files that are in the current directory.
