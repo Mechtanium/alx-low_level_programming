@@ -10,13 +10,13 @@
  * Description: Prints the name of the program that called this code.
  * Return: EXIT_SUCCESS.
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
-	char c;
+	int c;
 
 	for (c = 0; c < argc; c++)
 	{
-		printf("%s\n", *argv + c);
+		printf("%s\n", argv[c]);
 	}
 	return (EXIT_SUCCESS);
 }
