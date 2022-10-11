@@ -1,6 +1,7 @@
 #ifndef MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
 #define MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
 int _putchar(char c); /* For testing. Don't delete */
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 /**
  * dog - defines a struct dog
