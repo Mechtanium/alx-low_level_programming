@@ -5,5 +5,8 @@ int _putchar(char c); /* For testing. Don't delete */
 
 #endif
 #ifndef SIZE
+/**
+ * SIZE - Constant of 1024
+ */
 #define SIZE 1024
 #endif
