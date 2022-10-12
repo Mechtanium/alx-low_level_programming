@@ -11,5 +11,5 @@
  */
 int main(char argc)
 {
-	return (EXIT_SUCCESS);
+	return (0);
 }
