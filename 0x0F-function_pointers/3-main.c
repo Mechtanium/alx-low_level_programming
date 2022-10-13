@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 		return (BAD_ARGS);
 	}
 
-	if (*argv[2] != '+' || *argv[2] != '-' || *argv[2] != '/' || *argv[2] !=
-			'*' || *argv[2] != '%')
+	if (*argv[2] != '+' && *argv[2] != '-' && *argv[2] != '/' && *argv[2] !=
+			'*' && *argv[2] != '%')
 	{
 		printf("%s\n", "Error");
 		return (BAD_OPS);

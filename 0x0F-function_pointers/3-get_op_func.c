@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <string.h>
 #include "3-calc.h"
 
 /**
@@ -14,13 +15,14 @@ int (*get_op_func(char *s))(int, int)
 {
 	int i = 5;
 
-	op_t ops[5] = {{"+", op_add}, {"-", op_sub}, {"*", op_mul},
-		{"/", op_div}, {"%", op_mod}};
+	op_t ops[5] = {{"+", &op_add}, {"-", &op_sub}, {"*", &op_mul},
+		{"/", &op_div}, {"%", &op_mod}};
 
 	while (i)
 	{
-		if (*(ops[i].op) == *s)
+		if (strcmp(ops[i].op, s))
 			return (ops[i].f);
+		i--;
 	}
 
 	return (NULL);
