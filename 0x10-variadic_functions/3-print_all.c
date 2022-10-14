@@ -6,7 +6,7 @@
 /**
  * printer - Switches to print type
  * @format: String of format characters
- * @: Integer counter
+ * @i: Integer counter
  * @ls: va_list list of variable parameters.
  *
  * Description: Switches between c, i, f, s data types
