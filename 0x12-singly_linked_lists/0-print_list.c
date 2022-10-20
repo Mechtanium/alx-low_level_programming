@@ -3,11 +3,11 @@
 #include "lists.h"
 
 /**
- * main - 
- * @argc: 
+ * print_list - Print the elements of a list.
+ * @h: head pointer
  *
- * Description: 
- * Return: 
+ * Description: Prints all the elements of a list in order.
+ * Return: The size of the list.
  */
 size_t print_list(list_t *h)
 {
@@ -20,14 +20,14 @@ size_t print_list(list_t *h)
 		return (1);
 	}
 
-	do
-	{
-		if (ptr->str == NULL)
+	do {
+		if (ptr->str == NULL || ptr->len == 0)
 			printf("[0] (nil)\n");
 		else
 			printf("[%d] %s\n", ptr->len, ptr->str);
 		ptr = ptr->next;
 		count++;
-	}while (ptr != NULL);
+	} while (ptr != NULL);
+
 	return (count);
 }
