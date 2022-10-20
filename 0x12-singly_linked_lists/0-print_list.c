@@ -9,10 +9,10 @@
  * Description: Prints all the elements of a list in order.
  * Return: The size of the list.
  */
-size_t print_list(list_t *h)
+size_t print_list(const list_t *h)
 {
 	size_t count = 0;
-	list_t *ptr = h;
+	const list_t *ptr = h;
 
 	/*if (ptr == NULL)*/
 	/*{*/
