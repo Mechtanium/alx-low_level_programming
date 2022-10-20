@@ -14,11 +14,11 @@ size_t print_list(list_t *h)
 	size_t count = 0;
 	list_t *ptr = h;
 
-	if (ptr == NULL)
-	{
-		printf("Error\n");
-		return (1);
-	}
+	/*if (ptr == NULL)*/
+	/*{*/
+	/*	printf("Error\n");*/
+	/*	return (1);*/
+	/*}*/
 
 	do {
 		if (ptr->str == NULL)
