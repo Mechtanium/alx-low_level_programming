@@ -19,10 +19,10 @@ size_t print_listint(listint_t *h)
 	while (h->next != NULL)
 	{
 		size++;
-		_printf("%d\n", h->n);
+		printf("%d\n", h->n);
 		h = h->next;
 	}
-	_printf("%d\n", h->n);
+	printf("%d\n", h->n);
 
 	return (size);
 }
