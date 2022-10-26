@@ -22,7 +22,7 @@ size_t print_listint(listint_t *h)
 		_printf("%d\n", h->n);
 		h = h->next;
 	}
-	_printf("%d\n", h->n);
+	printf("%d\n", h->n);
 
 	return (size);
 }
