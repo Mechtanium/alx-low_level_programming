@@ -16,7 +16,7 @@ void print_binary(unsigned long int n)
 	if (n == 0)
 		_putchar('0');
 
-	for (i = t - 2; i >= 0; i--)
+	for (i = t - 1; i >= 0; i--)
 	{
 		b = 1;
 		b = b << i;
