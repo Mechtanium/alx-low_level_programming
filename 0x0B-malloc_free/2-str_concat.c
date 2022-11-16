@@ -15,9 +15,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i = 0, j = 0;
 	char *cat_str;
 
-	while (s1[i] && s1 != NULL)
+	while (s1 != NULL && s1[i])
 		i++;
-	while (s2[j] && s2 != NULL)
+	while (s2 != NULL && s2[j])
 		j++;
 
 	i += j;
@@ -28,13 +28,13 @@ char *str_concat(char *s1, char *s2)
 		return ((char *) NULL);
 
 	i = 0;
-	while (s1[i] && s1 != NULL)
+	while (s1 != NULL && s1[i])
 	{
 		cat_str[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (s2[j] && s2 != NULL)
+	while (s2 != NULL && s2[j])
 	{
 		cat_str[j + i] = s2[j];
 		j++;
@@ -45,3 +45,4 @@ char *str_concat(char *s1, char *s2)
 
 	return (cat_str);
 }
+
