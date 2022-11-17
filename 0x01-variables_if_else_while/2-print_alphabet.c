@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "main.h"
+/*#include "main.h"*/
 
-int _putchar(char c);
+/*int _putchar(char c);*/
 
 /**
  * main -  prints the alphabet
@@ -16,9 +16,9 @@ int main(void)
 
 	while (x <= 'z')
 	{
-		_putchar(x);
+		putchar(x);
 		x++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (EXIT_SUCCESS);
 }
