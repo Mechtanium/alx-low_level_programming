@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-int _putchar(char c);
+int putchar(char c);
 /**
  * main -  prints the alphabet
  *
@@ -17,6 +17,6 @@ int main(void)
 		_putchar(x);
 		x++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (EXIT_SUCCESS);
 }
