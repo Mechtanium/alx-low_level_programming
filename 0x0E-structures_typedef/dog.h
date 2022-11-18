@@ -1,20 +1,24 @@
-#ifndef MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
-#define MAIN_H /* You may change this (e.g. main.h becomes MAIN_H)*/
-int _putchar(char c); /* For testing. Don't delete */
-void init_dog(struct dog *d, char *name, float age, char *owner);
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * dog - defines a struct dog
- * @name: First member
- * @age: Second member
- * @owner: Third member
- *
- * Description: defines a struct dog
+ * struct dog - struture of a dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  */
-struct dog 
+
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
-#endif
+
+} dog_t;
+
+int _putchar(char c);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
+#endif /* #ifndef DOG_H */
